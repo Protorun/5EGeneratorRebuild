@@ -33,6 +33,7 @@
             this.BtnClass = new System.Windows.Forms.Button();
             this.BtnAttributes = new System.Windows.Forms.Button();
             this.BtnSkills = new System.Windows.Forms.Button();
+            this.GroupDisplayToonInfo = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // BtnGender
@@ -43,6 +44,7 @@
             this.BtnGender.TabIndex = 0;
             this.BtnGender.Text = "Gender";
             this.BtnGender.UseVisualStyleBackColor = true;
+            this.BtnGender.Click += new System.EventHandler(this.BtnGender_Click);
             // 
             // BtnRace
             // 
@@ -52,6 +54,7 @@
             this.BtnRace.TabIndex = 1;
             this.BtnRace.Text = "Race";
             this.BtnRace.UseVisualStyleBackColor = true;
+            this.BtnRace.Click += new System.EventHandler(this.BtnRace_Click);
             // 
             // BtnClass
             // 
@@ -80,18 +83,29 @@
             this.BtnSkills.Text = "Skills";
             this.BtnSkills.UseVisualStyleBackColor = true;
             // 
-            // NewToon
+            // GroupDisplayToonInfo
+            // 
+            this.GroupDisplayToonInfo.Location = new System.Drawing.Point(162, 13);
+            this.GroupDisplayToonInfo.Name = "GroupDisplayToonInfo";
+            this.GroupDisplayToonInfo.Size = new System.Drawing.Size(402, 253);
+            this.GroupDisplayToonInfo.TabIndex = 5;
+            this.GroupDisplayToonInfo.TabStop = false;
+            this.GroupDisplayToonInfo.Text = "Character Panel";
+            // 
+            // FormNewToon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 280);
+            this.ClientSize = new System.Drawing.Size(576, 278);
+            this.Controls.Add(this.GroupDisplayToonInfo);
             this.Controls.Add(this.BtnSkills);
             this.Controls.Add(this.BtnAttributes);
             this.Controls.Add(this.BtnClass);
             this.Controls.Add(this.BtnRace);
             this.Controls.Add(this.BtnGender);
-            this.Name = "NewToon";
+            this.Name = "FormNewToon";
             this.Text = "New Character";
+            this.Load += new System.EventHandler(this.FormNewToon_Load);
             this.ResumeLayout(false);
 
         }
@@ -103,5 +117,6 @@
         private System.Windows.Forms.Button BtnClass;
         private System.Windows.Forms.Button BtnAttributes;
         private System.Windows.Forms.Button BtnSkills;
+        private System.Windows.Forms.GroupBox GroupDisplayToonInfo;
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace _5eGenRebuild
 {
-    class Character
+    public class Character
     {
-        string FirstName,
+        public string FirstName,
             LastName,
             Gender,
             Race,
@@ -16,7 +16,7 @@ namespace _5eGenRebuild
             Class,
             SubClass;
 
-        int Age,
+        public int Age,
             ProficiencyBonus,
             HitPoints,
             HitDie,
@@ -27,7 +27,17 @@ namespace _5eGenRebuild
 
         public Character()
         {
+            
+        }
 
+        public void SetGender(Character ThisToon, string Gender)
+        {
+            ThisToon.Gender = Gender;
+        }
+
+        public void SetRace(Character ThisToon, string Race)
+        {
+            ThisToon.Race = Race;
         }
     }
 }

@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace _5eGenRebuild
 {
-    public partial class FormMainMenu : Form
+    public partial class FormSubRace : Form
     {
-        public FormMainMenu()
+        public FormSubRace()
         {
             InitializeComponent();
-        }
-
-        private void BtnNewToon_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form NewToonMenu = new FormNewToon();
-            NewToonMenu.Show();
         }
     }
 }

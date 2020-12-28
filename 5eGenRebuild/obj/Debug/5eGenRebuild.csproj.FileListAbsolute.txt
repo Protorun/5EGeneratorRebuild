@@ -8,3 +8,6 @@ C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenR
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.csproj.CoreCompileInputs.cache
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.exe
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.pdb
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormGender.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormNewToon.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormRace.resources
