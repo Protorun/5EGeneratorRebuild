@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _5eGenRebuild
 {
-    public partial class FormMainMenu : Form
+    public partial class FormDeleteToon : Form
     {
-        public FormMainMenu()
+        public FormDeleteToon()
         {
             InitializeComponent();
         }

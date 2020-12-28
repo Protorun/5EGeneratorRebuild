@@ -42,6 +42,7 @@
             this.BtnNewToon.TabIndex = 0;
             this.BtnNewToon.Text = "New Character";
             this.BtnNewToon.UseVisualStyleBackColor = true;
+            this.BtnNewToon.Click += new System.EventHandler(this.BtnNewToon_Click);
             // 
             // BtnLoadToon
             // 

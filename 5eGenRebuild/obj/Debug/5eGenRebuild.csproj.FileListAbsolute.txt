@@ -1,0 +1,10 @@
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\bin\Debug\5eGenRebuild.exe.config
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\bin\Debug\5eGenRebuild.exe
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\bin\Debug\5eGenRebuild.pdb
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.csprojAssemblyReference.cache
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormMainMenu.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.Properties.Resources.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.csproj.GenerateResource.cache
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.csproj.CoreCompileInputs.cache
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.exe
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.pdb
