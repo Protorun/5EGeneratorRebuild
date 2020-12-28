@@ -14,18 +14,19 @@ namespace _5eGenRebuild
             Race,
             SubRace,
             Class,
-            SubClass;
+            Subclass;
 
         public int Age,
             ProficiencyBonus,
             HitPoints,
             HitDie,
-            Level;
+            TotalLevel;
 
         public Dictionary<string, int> Attributes = new Dictionary<string, int>();
         public Dictionary<string, int> AttributeModifiers = new Dictionary<string, int>();
         public Dictionary<string, int> SubClassLevel = new Dictionary<string, int>();
-        public Dictionary<string, Dictionary<string, int>> ClassList = new Dictionary<string, Dictionary<string, int>>();
+        public Dictionary<string, int> ClassList = new Dictionary<string, int>();
+        public Dictionary<string, string> ClassSubclass = new Dictionary<string, string>();
         public Dictionary<string, int> SavingThrows = new Dictionary<string, int>();
         public List<string> SavingThrowProfs = new List<string>();
 
@@ -232,13 +233,17 @@ namespace _5eGenRebuild
                 FinalArray.SetValue(Attribute, x);
                 Attribute = 0;
             }
-            //FinalArray.SetValue(RollAttribute(), 0);
-            //FinalArray.SetValue(RollAttribute(), 1);
-            //FinalArray.SetValue(RollAttribute(), 2);
-            //FinalArray.SetValue(RollAttribute(), 3);
-            //FinalArray.SetValue(RollAttribute(), 4);
-            //FinalArray.SetValue(RollAttribute(), 5);
             return FinalArray;
+        }
+
+        public int CalculateTotalLevel(Character ThisToon)
+        {
+            int Level = 0;
+            foreach (var item in ThisToon.ClassList.Values)
+            {
+                Level =+ item;
+            }
+            return Level;
         }
     }
 }

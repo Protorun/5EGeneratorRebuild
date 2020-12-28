@@ -11,3 +11,7 @@ C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenR
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormGender.resources
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormNewToon.resources
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormRace.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormAttributes.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormClass.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormSkills.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormSubRace.resources
