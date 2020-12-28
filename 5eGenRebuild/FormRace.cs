@@ -31,13 +31,13 @@ namespace _5eGenRebuild
             if(racelist.Contains(ThisToon.Race))
             {
                 this.Hide();
-                FormNewToon NewToonMenu = new FormNewToon();
+                FormNewToon NewToonMenu = new FormNewToon(ThisToon);
                 NewToonMenu.Show();
             }
             else
             {
                 this.Hide();
-                FormSubRace SubRaceMenu = new FormSubRace();
+                FormSubRace SubRaceMenu = new FormSubRace(ThisToon);
                 SubRaceMenu.Show();
             }
         }

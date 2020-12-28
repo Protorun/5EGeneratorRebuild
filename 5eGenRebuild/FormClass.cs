@@ -12,9 +12,17 @@ namespace _5eGenRebuild
 {
     public partial class FormClass : Form
     {
-        public FormClass()
+        Character ThisToon;
+
+        public FormClass(Character NewToon)
         {
             InitializeComponent();
+            ThisToon = NewToon;
+        }
+
+        private void FormClass_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,23 +12,23 @@ namespace _5eGenRebuild
 {
     public partial class FormNewToon : Form
     {
-        Character NewToon = new Character();
+        Character ThisToon = new Character();
 
         public FormNewToon()
         {
             InitializeComponent();
         }
 
-        public FormNewToon(Character ThisToon)
+        public FormNewToon(Character NewToon)
         {
             InitializeComponent();
-            NewToon = ThisToon;
+            ThisToon = NewToon;
         }
 
         private void BtnGender_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form Gender = new FormGender(NewToon);
+            Form Gender = new FormGender(ThisToon);
             Gender.Show();
         }
 
@@ -40,8 +40,29 @@ namespace _5eGenRebuild
         private void BtnRace_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form Race = new FormRace(NewToon);
+            Form Race = new FormRace(ThisToon);
             Race.Show();
+        }
+
+        private void BtnClass_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Class = new FormClass(ThisToon);
+            Class.Show();
+        }
+
+        private void BtnAttributes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Attributes = new FormAttributes(ThisToon);
+            Attributes.Show();
+        }
+
+        private void BtnSkills_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form Skills = new FormSkills(ThisToon);
+            Skills.Show();
         }
     }
 }

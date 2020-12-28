@@ -12,9 +12,16 @@ namespace _5eGenRebuild
 {
     public partial class FormSubRace : Form
     {
-        public FormSubRace()
+        Character ThisToon;
+        public FormSubRace(Character NewToon)
         {
             InitializeComponent();
+            ThisToon = NewToon;
+        }
+
+        private void FormSubRace_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

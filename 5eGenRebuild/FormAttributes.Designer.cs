@@ -1,6 +1,6 @@
 ﻿namespace _5eGenRebuild
 {
-    partial class FormClass
+    partial class FormAttributes
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // FormClass
+            // FormAttributes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormClass";
-            this.Text = "FormClass";
-            this.Load += new System.EventHandler(this.FormClass_Load);
+            this.Name = "FormAttributes";
+            this.Text = "FormAttributes";
+            this.Load += new System.EventHandler(this.FormAttributes_Load);
             this.ResumeLayout(false);
 
         }

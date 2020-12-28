@@ -64,6 +64,7 @@
             this.BtnClass.TabIndex = 2;
             this.BtnClass.Text = "Class";
             this.BtnClass.UseVisualStyleBackColor = true;
+            this.BtnClass.Click += new System.EventHandler(this.BtnClass_Click);
             // 
             // BtnAttributes
             // 
@@ -73,6 +74,7 @@
             this.BtnAttributes.TabIndex = 3;
             this.BtnAttributes.Text = "Attributes";
             this.BtnAttributes.UseVisualStyleBackColor = true;
+            this.BtnAttributes.Click += new System.EventHandler(this.BtnAttributes_Click);
             // 
             // BtnSkills
             // 
@@ -82,6 +84,7 @@
             this.BtnSkills.TabIndex = 4;
             this.BtnSkills.Text = "Skills";
             this.BtnSkills.UseVisualStyleBackColor = true;
+            this.BtnSkills.Click += new System.EventHandler(this.BtnSkills_Click);
             // 
             // GroupDisplayToonInfo
             // 

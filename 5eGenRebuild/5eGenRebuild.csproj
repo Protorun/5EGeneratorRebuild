@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="FormAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAttributes.Designer.cs">
+      <DependentUpon>FormAttributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDeleteToon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAttributes.resx">
+      <DependentUpon>FormAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass.resx">
+      <DependentUpon>FormClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGender.resx">
       <DependentUpon>FormGender.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRace.resx">
       <DependentUpon>FormRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSkills.resx">
+      <DependentUpon>FormSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSubRace.resx">
+      <DependentUpon>FormSubRace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

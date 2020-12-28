@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace _5eGenRebuild
 {
-    public partial class FormSkills : Form
+    public partial class FormAttributes : Form
     {
         Character ThisToon;
 
-        public FormSkills(Character NewToon)
+        public FormAttributes(Character NewToon)
         {
             InitializeComponent();
             ThisToon = NewToon;
         }
 
-        private void FormSkills_Load(object sender, EventArgs e)
+        private void FormAttributes_Load(object sender, EventArgs e)
         {
 
         }
