@@ -39,6 +39,9 @@
             this.BtnContinue = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.LblSelection = new System.Windows.Forms.Label();
+            this.TxtDisplayInfo = new System.Windows.Forms.RichTextBox();
+            this.BtnHalfOrc = new System.Windows.Forms.Button();
+            this.BtnGnome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnHuman
@@ -123,7 +126,7 @@
             // 
             // BtnContinue
             // 
-            this.BtnContinue.Location = new System.Drawing.Point(74, 240);
+            this.BtnContinue.Location = new System.Drawing.Point(74, 345);
             this.BtnContinue.Name = "BtnContinue";
             this.BtnContinue.Size = new System.Drawing.Size(142, 46);
             this.BtnContinue.TabIndex = 13;
@@ -151,11 +154,48 @@
             this.LblSelection.TabIndex = 15;
             this.LblSelection.Text = " - ";
             // 
+            // TxtDisplayInfo
+            // 
+            this.TxtDisplayInfo.BackColor = System.Drawing.Color.White;
+            this.TxtDisplayInfo.CausesValidation = false;
+            this.TxtDisplayInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDisplayInfo.Location = new System.Drawing.Point(299, 12);
+            this.TxtDisplayInfo.Name = "TxtDisplayInfo";
+            this.TxtDisplayInfo.ReadOnly = true;
+            this.TxtDisplayInfo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.TxtDisplayInfo.Size = new System.Drawing.Size(503, 379);
+            this.TxtDisplayInfo.TabIndex = 29;
+            this.TxtDisplayInfo.Text = "";
+            this.TxtDisplayInfo.TextChanged += new System.EventHandler(this.TxtDisplayInfo_TextChanged);
+            // 
+            // BtnHalfOrc
+            // 
+            this.BtnHalfOrc.Location = new System.Drawing.Point(3, 240);
+            this.BtnHalfOrc.Name = "BtnHalfOrc";
+            this.BtnHalfOrc.Size = new System.Drawing.Size(142, 46);
+            this.BtnHalfOrc.TabIndex = 30;
+            this.BtnHalfOrc.Text = "Half-Orc";
+            this.BtnHalfOrc.UseVisualStyleBackColor = true;
+            this.BtnHalfOrc.Click += new System.EventHandler(this.BtnHalfOrc_Click);
+            // 
+            // BtnGnome
+            // 
+            this.BtnGnome.Location = new System.Drawing.Point(151, 240);
+            this.BtnGnome.Name = "BtnGnome";
+            this.BtnGnome.Size = new System.Drawing.Size(142, 46);
+            this.BtnGnome.TabIndex = 31;
+            this.BtnGnome.Text = "Gnome";
+            this.BtnGnome.UseVisualStyleBackColor = true;
+            this.BtnGnome.Click += new System.EventHandler(this.BtnGnome_Click);
+            // 
             // FormRace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(297, 335);
+            this.ClientSize = new System.Drawing.Size(815, 403);
+            this.Controls.Add(this.BtnGnome);
+            this.Controls.Add(this.BtnHalfOrc);
+            this.Controls.Add(this.TxtDisplayInfo);
             this.Controls.Add(this.LblSelection);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnContinue);
@@ -168,7 +208,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnHuman);
             this.Name = "FormRace";
-            this.Text = "FormRace";
+            this.Text = "Select character race";
             this.Load += new System.EventHandler(this.FormRace_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,5 +228,8 @@
         private System.Windows.Forms.Button BtnContinue;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblSelection;
+        private System.Windows.Forms.RichTextBox TxtDisplayInfo;
+        private System.Windows.Forms.Button BtnHalfOrc;
+        private System.Windows.Forms.Button BtnGnome;
     }
 }

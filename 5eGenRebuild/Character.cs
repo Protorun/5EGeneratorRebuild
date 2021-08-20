@@ -26,14 +26,26 @@ namespace _5eGenRebuild
         public Dictionary<string, int> AttributeModifiers = new Dictionary<string, int>();
         public Dictionary<string, int> SubClassLevel = new Dictionary<string, int>();
         public Dictionary<string, int> ClassList = new Dictionary<string, int>();
-        public Dictionary<string, string> ClassSubclass = new Dictionary<string, string>();
+        public Dictionary<string, string> SubClasses = new Dictionary<string, string>();
         public Dictionary<string, int> SavingThrows = new Dictionary<string, int>();
+        public Dictionary<string, int> Skills = new Dictionary<string, int>();
         public List<string> SavingThrowProfs = new List<string>();
-
 
         public Character()
         {
             ProficiencyBonus = 2;
+            Attributes.Add("Strength", 0);
+            Attributes.Add("Dexterity", 0);
+            Attributes.Add("Constitution", 0);
+            Attributes.Add("Intelligence", 0);
+            Attributes.Add("Wisdom", 0);
+            Attributes.Add("Charisma", 0);
+            SavingThrows.Add("Strength", 0);
+            SavingThrows.Add("Dexterity", 0);
+            SavingThrows.Add("Constitution", 0);
+            SavingThrows.Add("Intelligence", 0);
+            SavingThrows.Add("Wisdom", 0);
+            SavingThrows.Add("Charisma", 0);
         }
 
         public void SetGender(Character ThisToon, string Gender)
@@ -44,6 +56,11 @@ namespace _5eGenRebuild
         public void SetRace(Character ThisToon, string Race)
         {
             ThisToon.Race = Race;
+        }
+
+        public void SetSubRace(Character ThisToon, string SubRace)
+        {
+            ThisToon.SubRace = SubRace;
         }
 
         public void SetupClass(Character ThisToon)
@@ -229,7 +246,7 @@ namespace _5eGenRebuild
                 {
                     Attribute += Rolls[i];
                 }
-
+                //CHANGE THIS CODE, NEED TO GENERATE MORE NUMBERS *6 AS RANDOM IS BASED ON SYSTEM TIME, NEED A BIG LIST TO PULL FROM SO NUMBERS CAN BE REFRESHED
                 FinalArray.SetValue(Attribute, x);
                 Attribute = 0;
             }
