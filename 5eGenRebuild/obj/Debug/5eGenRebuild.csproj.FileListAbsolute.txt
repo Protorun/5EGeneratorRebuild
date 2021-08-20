@@ -15,3 +15,7 @@ C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGen
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormClass.resources
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormSkills.resources
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormSubRace.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\bin\Debug\aspnet_regsql.exe
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\bin\Debug\aspnet_regsql.exe.config
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.csproj.CopyComplete
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormSelectAttribute.resources

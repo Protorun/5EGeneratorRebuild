@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="aspnet_regsql">
+      <HintPath>..\..\..\..\..\..\WINDOWS\microsoft.net\framework\v2.0.50727\aspnet_regsql.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -83,6 +87,12 @@
     <Compile Include="FormRace.Designer.cs">
       <DependentUpon>FormRace.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSelectAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectAttribute.Designer.cs">
+      <DependentUpon>FormSelectAttribute.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSkills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRace.resx">
       <DependentUpon>FormRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectAttribute.resx">
+      <DependentUpon>FormSelectAttribute.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSkills.resx">
       <DependentUpon>FormSkills.cs</DependentUpon>
