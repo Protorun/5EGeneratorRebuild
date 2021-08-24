@@ -41,6 +41,10 @@
             this.LblGender = new System.Windows.Forms.Label();
             this.BtnBackground = new System.Windows.Forms.Button();
             this.BtnConfirm = new System.Windows.Forms.Button();
+            this.BtnAddFireball = new System.Windows.Forms.Button();
+            this.BtnFeat = new System.Windows.Forms.Button();
+            this.BtnSpells = new System.Windows.Forms.Button();
+            this.LblClass = new System.Windows.Forms.Label();
             this.GroupDisplayToonInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +100,9 @@
             // 
             // GroupDisplayToonInfo
             // 
+            this.GroupDisplayToonInfo.Controls.Add(this.LblClass);
+            this.GroupDisplayToonInfo.Controls.Add(this.BtnFeat);
+            this.GroupDisplayToonInfo.Controls.Add(this.BtnAddFireball);
             this.GroupDisplayToonInfo.Controls.Add(this.TxtLastName);
             this.GroupDisplayToonInfo.Controls.Add(this.TxtFirstName);
             this.GroupDisplayToonInfo.Controls.Add(this.LblSubrace);
@@ -160,7 +167,7 @@
             // 
             // BtnConfirm
             // 
-            this.BtnConfirm.Location = new System.Drawing.Point(13, 325);
+            this.BtnConfirm.Location = new System.Drawing.Point(13, 377);
             this.BtnConfirm.Name = "BtnConfirm";
             this.BtnConfirm.Size = new System.Drawing.Size(142, 46);
             this.BtnConfirm.TabIndex = 8;
@@ -168,11 +175,52 @@
             this.BtnConfirm.UseVisualStyleBackColor = true;
             this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
             // 
+            // BtnAddFireball
+            // 
+            this.BtnAddFireball.Location = new System.Drawing.Point(113, 222);
+            this.BtnAddFireball.Name = "BtnAddFireball";
+            this.BtnAddFireball.Size = new System.Drawing.Size(75, 23);
+            this.BtnAddFireball.TabIndex = 5;
+            this.BtnAddFireball.Text = "Add Fireball";
+            this.BtnAddFireball.UseVisualStyleBackColor = true;
+            this.BtnAddFireball.Click += new System.EventHandler(this.BtnAddFireball_Click);
+            // 
+            // BtnFeat
+            // 
+            this.BtnFeat.Location = new System.Drawing.Point(113, 252);
+            this.BtnFeat.Name = "BtnFeat";
+            this.BtnFeat.Size = new System.Drawing.Size(75, 23);
+            this.BtnFeat.TabIndex = 6;
+            this.BtnFeat.Text = "Add a feat";
+            this.BtnFeat.UseVisualStyleBackColor = true;
+            this.BtnFeat.Click += new System.EventHandler(this.BtnFeat_Click);
+            // 
+            // BtnSpells
+            // 
+            this.BtnSpells.Enabled = false;
+            this.BtnSpells.Location = new System.Drawing.Point(14, 325);
+            this.BtnSpells.Name = "BtnSpells";
+            this.BtnSpells.Size = new System.Drawing.Size(142, 46);
+            this.BtnSpells.TabIndex = 9;
+            this.BtnSpells.Text = "Spells";
+            this.BtnSpells.UseVisualStyleBackColor = true;
+            this.BtnSpells.Click += new System.EventHandler(this.BtnSpells_Click);
+            // 
+            // LblClass
+            // 
+            this.LblClass.AutoSize = true;
+            this.LblClass.Location = new System.Drawing.Point(7, 59);
+            this.LblClass.Name = "LblClass";
+            this.LblClass.Size = new System.Drawing.Size(32, 13);
+            this.LblClass.TabIndex = 7;
+            this.LblClass.Text = "Class";
+            // 
             // FormNewToon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 386);
+            this.ClientSize = new System.Drawing.Size(576, 430);
+            this.Controls.Add(this.BtnSpells);
             this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.BtnBackground);
             this.Controls.Add(this.GroupDisplayToonInfo);
@@ -205,5 +253,9 @@
         private System.Windows.Forms.Button BtnConfirm;
         private System.Windows.Forms.TextBox TxtLastName;
         private System.Windows.Forms.TextBox TxtFirstName;
+        private System.Windows.Forms.Button BtnAddFireball;
+        private System.Windows.Forms.Button BtnFeat;
+        private System.Windows.Forms.Button BtnSpells;
+        private System.Windows.Forms.Label LblClass;
     }
 }

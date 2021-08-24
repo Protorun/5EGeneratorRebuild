@@ -22,36 +22,45 @@ namespace _5eGenRebuild
 
         private void FormRace_Load(object sender, EventArgs e)
         {
-
+            ThisToon.Spellbook.Clear();
         }
 
         private void BtnContinue_Click(object sender, EventArgs e)
         {
+            if (LblSelection.Text == "Tiefling")
+            {
+                Spell Thaumaturgy = new Spell(0, "Thaumaturgy", @"You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:
+
+Your voice booms up to three times as loud as normal for 1 minute.
+You cause flames to flicker, brighten, dim, or change color for 1 minute.
+You cause harmless tremors in the ground for 1 minute.
+You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.
+You instantaneously cause an unlocked door or window to fly open or slam shut.
+You alter the appearance of your eyes for 1 minute.
+
+If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.", "Transmutation", false, 30, "1 minute", true, false, false);
+                Thaumaturgy.AddToSpellbook(ThisToon);
+            }
+
             List<string> racelist = new List<string> { "Human", "Half-Elf", "Tiefling", "Half-Orc" };
-            foreach (string Race in racelist)
+            if (LblSelection.Text != " - ")
             {
-                Console.WriteLine(Race);
-            }
-            Console.WriteLine(ThisToon.Race);
-            if(racelist.Contains(ThisToon.Race))
-            {
-                Console.WriteLine("THIS SHOULD WORK");
-                this.Hide();
-                FormNewToon NewToonMenu = new FormNewToon(ThisToon);
-                NewToonMenu.Show();
-            }
-            if(ThisToon.Race == "Half-Elf")
-            {
-                this.Hide();
-                FormSelectAttribute AttributeSelection = new FormSelectAttribute(ThisToon);
-                AttributeSelection.Show();
+                if (racelist.Contains(ThisToon.Race) == true)
+                {
+                    this.Hide();
+                    FormNewToon NewToonMenu = new FormNewToon(ThisToon);
+                    NewToonMenu.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    FormSubRace SubRaceMenu = new FormSubRace(ThisToon);
+                    SubRaceMenu.Show();
+                }
             }
             else
             {
-                Console.WriteLine("THIS SHOUDN'T BE HAPPENING");
-                this.Hide();
-                FormSubRace SubRaceMenu = new FormSubRace(ThisToon);
-                SubRaceMenu.Show();
+                MessageBox.Show("Please select a race", "No race selected");
             }
         }
 
@@ -126,11 +135,6 @@ You can speak, read, and write Common and Elven.";
             ThisToon.SetSubRace(ThisToon, "No Subrace");
             LblSelection.Text = ThisToon.Race;
             ThisToon.Attributes["Charisma"] = ThisToon.Attributes["Charisma"] + 2;
-
-            // ALLOW SELECTION OF WHICH 2 ABILITY SCORES ARE INCREASED
-            FormSelectAttribute AttributeSelection = new FormSelectAttribute(ThisToon);
-            AttributeSelection.Show();
-
             TxtDisplayInfo.Text = @"Ability Score Increase
 Your Charisma score increases by 2, and two other ability scores of your choice each increase by 1.
 
@@ -163,6 +167,38 @@ You gain proficiency in two skills of your choice.";
         {
             ThisToon.SetRace(ThisToon, "Dwarf");
             LblSelection.Text = ThisToon.Race;
+            TxtDisplayInfo.Text = @"Ability Score Increase
+Your Constitution score increases by 2.
+
+Age
+Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years.
+
+Alignment
+Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order.
+
+Size
+Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.
+
+Speed
+Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.
+
+Darkvision
+Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+
+Dwarven Resilience
+You have advantage on saving throws against poison, and you have resistance against poison damage.
+
+Dwarven Combat Training
+You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.
+
+Tool Proficiency
+You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.
+
+Stonecunning
+Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.
+
+Languages
+You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.";
         }
 
         private void BtnDragonborn_Click(object sender, EventArgs e)
@@ -214,12 +250,64 @@ White - Cold - 15' cone (CON save)";
             ThisToon.SetRace(ThisToon, "Tiefling");
             ThisToon.SetSubRace(ThisToon, "No Subrace");
             LblSelection.Text = ThisToon.Race;
+            TxtDisplayInfo.Text = @"Ability Score Increase
+Your Charisma score increases by 2, and your Intelligence score increases by 1.
+
+Age
+Tieflings mature at the same rate as humans but live a few years longer.
+
+Alignment
+Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.
+
+Size
+Tieflings are about the same size and build as humans. Your size is Medium.
+
+Speed
+Your base walking speed is 30 feet.
+
+Darkvision
+Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+
+Hellish Resistance
+You have resistance to fire damage.
+
+Languages
+You can speak, read, and write Common and Infernal.
+
+Infernal Legacy
+You know the Thaumaturgy cantrip. Once you reach 3rd level, you can cast the Hellish Rebuke spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the Darkness spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells.";
         }
 
         private void BtnHalfling_Click(object sender, EventArgs e)
         {
             ThisToon.SetRace(ThisToon, "Halfling");
             LblSelection.Text = ThisToon.Race;
+            TxtDisplayInfo.Text = @"Ability Score Increase
+Your Dexterity score increases by 2.
+
+Age
+A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.
+
+Alignment
+Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of the old ways.
+
+Size
+Halflings average about 3 feet tall and weigh about 40 pounds. Your size is small.
+
+Speed
+Your base walking speed is 25 feet.
+
+Lucky
+When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1.
+
+Brave
+You have advantage on saving throws against being frightened.
+
+Nimble
+You can move through the space of any creature that is of a size larger than yours.
+
+Languages
+You can speak, read, and write Common and Halfling.";
         }
 
         private void TxtDisplayInfo_TextChanged(object sender, EventArgs e)

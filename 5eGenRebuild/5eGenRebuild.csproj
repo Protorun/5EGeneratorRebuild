@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="Feat.cs" />
     <Compile Include="FormAttributes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +63,12 @@
     </Compile>
     <Compile Include="FormDeleteToon.Designer.cs">
       <DependentUpon>FormDeleteToon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDomain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDomain.Designer.cs">
+      <DependentUpon>FormDomain.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
@@ -111,6 +118,12 @@
     <Compile Include="FormNewToon.Designer.cs">
       <DependentUpon>FormNewToon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSpellSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpellSelection.Designer.cs">
+      <DependentUpon>FormSpellSelection.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSubRace.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,11 +132,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spell.cs" />
     <EmbeddedResource Include="FormAttributes.resx">
       <DependentUpon>FormAttributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormClass.resx">
       <DependentUpon>FormClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDomain.resx">
+      <DependentUpon>FormDomain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGender.resx">
       <DependentUpon>FormGender.cs</DependentUpon>
@@ -142,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSkills.resx">
       <DependentUpon>FormSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpellSelection.resx">
+      <DependentUpon>FormSpellSelection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSubRace.resx">
       <DependentUpon>FormSubRace.cs</DependentUpon>

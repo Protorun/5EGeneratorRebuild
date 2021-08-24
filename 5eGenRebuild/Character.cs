@@ -14,7 +14,9 @@ namespace _5eGenRebuild
             Race,
             SubRace,
             Class,
-            Subclass;
+            Subclass,
+            Domain,
+            Deity;
 
         public int Age,
             ProficiencyBonus,
@@ -24,15 +26,19 @@ namespace _5eGenRebuild
 
         public Dictionary<string, int> Attributes = new Dictionary<string, int>();
         public Dictionary<string, int> AttributeModifiers = new Dictionary<string, int>();
-        public Dictionary<string, int> SubClassLevel = new Dictionary<string, int>();
+        // public Dictionary<string, int> SubClassLevel = new Dictionary<string, int>();
         public Dictionary<string, int> ClassList = new Dictionary<string, int>();
-        public Dictionary<string, string> SubClasses = new Dictionary<string, string>();
+        public Dictionary<string, string> ClassSubClass = new Dictionary<string, string>();
         public Dictionary<string, int> SavingThrows = new Dictionary<string, int>();
         public Dictionary<string, int> Skills = new Dictionary<string, int>();
         public List<string> SavingThrowProfs = new List<string>();
+        public List<Feat> FeatList = new List<Feat>();
+        public Dictionary<int, List<Spell>> Spellbook = new Dictionary<int, List<Spell>>();
+        public Dictionary<string, int> Money = new Dictionary<string, int>();
 
         public Character()
         {
+            // Initialise some stats and dictionaries
             ProficiencyBonus = 2;
             Attributes.Add("Strength", 0);
             Attributes.Add("Dexterity", 0);
@@ -40,12 +46,22 @@ namespace _5eGenRebuild
             Attributes.Add("Intelligence", 0);
             Attributes.Add("Wisdom", 0);
             Attributes.Add("Charisma", 0);
+            AttributeModifiers.Add("Strength", 0);
+            AttributeModifiers.Add("Dexterity", 0);
+            AttributeModifiers.Add("Constitution", 0);
+            AttributeModifiers.Add("Intelligence", 0);
+            AttributeModifiers.Add("Wisdom", 0);
+            AttributeModifiers.Add("Charisma", 0);
             SavingThrows.Add("Strength", 0);
             SavingThrows.Add("Dexterity", 0);
             SavingThrows.Add("Constitution", 0);
             SavingThrows.Add("Intelligence", 0);
             SavingThrows.Add("Wisdom", 0);
             SavingThrows.Add("Charisma", 0);
+            Money.Add("Bronze", 0);
+            Money.Add("Silver", 0);
+            Money.Add("Electrum", 0);
+            Money.Add("Gold", 0);
         }
 
         public void SetGender(Character ThisToon, string Gender)

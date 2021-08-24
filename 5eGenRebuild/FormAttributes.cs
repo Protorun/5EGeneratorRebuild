@@ -24,5 +24,12 @@ namespace _5eGenRebuild
         {
 
         }
+
+        private void BtnContinue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormNewToon CharacterMenu = new FormNewToon(ThisToon);
+            CharacterMenu.Show();
+        }
     }
 }

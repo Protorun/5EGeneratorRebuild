@@ -40,11 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BtnSub1 = new System.Windows.Forms.Button();
             this.BtnSub2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.TxtDisplayInfo = new System.Windows.Forms.RichTextBox();
             this.BtnSub9 = new System.Windows.Forms.Button();
             this.BtnSub10 = new System.Windows.Forms.Button();
@@ -89,6 +84,7 @@
             this.BtnSub7.Text = "null";
             this.BtnSub7.UseVisualStyleBackColor = true;
             this.BtnSub7.Visible = false;
+            this.BtnSub7.Click += new System.EventHandler(this.BtnSub7_Click);
             // 
             // BtnSub8
             // 
@@ -99,6 +95,7 @@
             this.BtnSub8.Text = "null";
             this.BtnSub8.UseVisualStyleBackColor = true;
             this.BtnSub8.Visible = false;
+            this.BtnSub8.Click += new System.EventHandler(this.BtnSub8_Click);
             // 
             // BtnSub5
             // 
@@ -106,19 +103,21 @@
             this.BtnSub5.Name = "BtnSub5";
             this.BtnSub5.Size = new System.Drawing.Size(142, 46);
             this.BtnSub5.TabIndex = 21;
-            this.BtnSub5.Text = "Dwarf";
+            this.BtnSub5.Text = "null";
             this.BtnSub5.UseVisualStyleBackColor = true;
             this.BtnSub5.Visible = false;
+            this.BtnSub5.Click += new System.EventHandler(this.BtnSub5_Click);
             // 
             // BtnSub6
             // 
-            this.BtnSub6.Location = new System.Drawing.Point(151, 136);
+            this.BtnSub6.Location = new System.Drawing.Point(152, 136);
             this.BtnSub6.Name = "BtnSub6";
             this.BtnSub6.Size = new System.Drawing.Size(142, 46);
             this.BtnSub6.TabIndex = 20;
             this.BtnSub6.Text = "null";
             this.BtnSub6.UseVisualStyleBackColor = true;
             this.BtnSub6.Visible = false;
+            this.BtnSub6.Click += new System.EventHandler(this.BtnSub6_Click);
             // 
             // BtnSub3
             // 
@@ -126,9 +125,10 @@
             this.BtnSub3.Name = "BtnSub3";
             this.BtnSub3.Size = new System.Drawing.Size(142, 46);
             this.BtnSub3.TabIndex = 19;
-            this.BtnSub3.Text = "Elf";
+            this.BtnSub3.Text = "null";
             this.BtnSub3.UseVisualStyleBackColor = true;
             this.BtnSub3.Visible = false;
+            this.BtnSub3.Click += new System.EventHandler(this.BtnSub3_Click);
             // 
             // BtnSub4
             // 
@@ -136,9 +136,10 @@
             this.BtnSub4.Name = "BtnSub4";
             this.BtnSub4.Size = new System.Drawing.Size(142, 46);
             this.BtnSub4.TabIndex = 18;
-            this.BtnSub4.Text = "Half-Elf";
+            this.BtnSub4.Text = "null";
             this.BtnSub4.UseVisualStyleBackColor = true;
             this.BtnSub4.Visible = false;
+            this.BtnSub4.Click += new System.EventHandler(this.BtnSub4_Click);
             // 
             // label1
             // 
@@ -156,7 +157,7 @@
             this.BtnSub1.Name = "BtnSub1";
             this.BtnSub1.Size = new System.Drawing.Size(142, 46);
             this.BtnSub1.TabIndex = 16;
-            this.BtnSub1.Text = "Human";
+            this.BtnSub1.Text = "null";
             this.BtnSub1.UseVisualStyleBackColor = true;
             this.BtnSub1.Visible = false;
             this.BtnSub1.Click += new System.EventHandler(this.BtnSub1_Click);
@@ -167,65 +168,16 @@
             this.BtnSub2.Name = "BtnSub2";
             this.BtnSub2.Size = new System.Drawing.Size(142, 46);
             this.BtnSub2.TabIndex = 27;
-            this.BtnSub2.Text = "Human";
+            this.BtnSub2.Text = "null";
             this.BtnSub2.UseVisualStyleBackColor = true;
             this.BtnSub2.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 46);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "null";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.BtnSub1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(151, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 46);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "null";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 84);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 46);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "null";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(3, 136);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 46);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "null";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(151, 32);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(142, 46);
-            this.button5.TabIndex = 27;
-            this.button5.Text = "null";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
+            this.BtnSub2.Click += new System.EventHandler(this.BtnSub2_Click);
             // 
             // TxtDisplayInfo
             // 
             this.TxtDisplayInfo.BackColor = System.Drawing.Color.White;
             this.TxtDisplayInfo.CausesValidation = false;
+            this.TxtDisplayInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDisplayInfo.Location = new System.Drawing.Point(300, 12);
             this.TxtDisplayInfo.Name = "TxtDisplayInfo";
             this.TxtDisplayInfo.ReadOnly = true;
@@ -243,6 +195,7 @@
             this.BtnSub9.Text = "null";
             this.BtnSub9.UseVisualStyleBackColor = true;
             this.BtnSub9.Visible = false;
+            this.BtnSub9.Click += new System.EventHandler(this.BtnSub9_Click);
             // 
             // BtnSub10
             // 
@@ -253,6 +206,7 @@
             this.BtnSub10.Text = "null";
             this.BtnSub10.UseVisualStyleBackColor = true;
             this.BtnSub10.Visible = false;
+            this.BtnSub10.Click += new System.EventHandler(this.BtnSub10_Click);
             // 
             // FormSubRace
             // 
@@ -262,22 +216,17 @@
             this.Controls.Add(this.BtnSub9);
             this.Controls.Add(this.BtnSub10);
             this.Controls.Add(this.TxtDisplayInfo);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.BtnSub2);
             this.Controls.Add(this.LblSelection);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnContinue);
             this.Controls.Add(this.BtnSub7);
             this.Controls.Add(this.BtnSub8);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.BtnSub5);
             this.Controls.Add(this.BtnSub6);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.BtnSub3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnSub4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSub1);
             this.Name = "FormSubRace";
             this.Text = "Select character subrace";
@@ -301,11 +250,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnSub1;
         private System.Windows.Forms.Button BtnSub2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.RichTextBox TxtDisplayInfo;
         private System.Windows.Forms.Button BtnSub9;
         private System.Windows.Forms.Button BtnSub10;

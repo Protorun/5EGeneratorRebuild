@@ -19,3 +19,5 @@ C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\bin\Debug\aspnet
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\bin\Debug\aspnet_regsql.exe.config
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\5eGenRebuild.csproj.CopyComplete
 C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormSelectAttribute.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormDomain.resources
+C:\Users\Lasto\Documents\GitHub\5EGeneratorRebuild\5eGenRebuild\obj\Debug\_5eGenRebuild.FormSpellSelection.resources
