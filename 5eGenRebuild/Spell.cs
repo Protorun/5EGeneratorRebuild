@@ -117,7 +117,7 @@ namespace _5eGenRebuild
             this.Description = Desc;
         }
 
-        public string GetSpellDesc(string Desc)
+        public string GetSpellDesc()
         {
             return this.Description;
         }

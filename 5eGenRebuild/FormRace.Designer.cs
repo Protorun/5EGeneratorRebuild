@@ -66,7 +66,7 @@
             // 
             // BtnHalfElf
             // 
-            this.BtnHalfElf.Location = new System.Drawing.Point(151, 84);
+            this.BtnHalfElf.Location = new System.Drawing.Point(3, 136);
             this.BtnHalfElf.Name = "BtnHalfElf";
             this.BtnHalfElf.Size = new System.Drawing.Size(142, 46);
             this.BtnHalfElf.TabIndex = 7;
@@ -96,7 +96,7 @@
             // 
             // BtnHalfling
             // 
-            this.BtnHalfling.Location = new System.Drawing.Point(151, 188);
+            this.BtnHalfling.Location = new System.Drawing.Point(3, 188);
             this.BtnHalfling.Name = "BtnHalfling";
             this.BtnHalfling.Size = new System.Drawing.Size(142, 46);
             this.BtnHalfling.TabIndex = 11;
@@ -106,7 +106,7 @@
             // 
             // BtnDwarf
             // 
-            this.BtnDwarf.Location = new System.Drawing.Point(3, 136);
+            this.BtnDwarf.Location = new System.Drawing.Point(151, 84);
             this.BtnDwarf.Name = "BtnDwarf";
             this.BtnDwarf.Size = new System.Drawing.Size(142, 46);
             this.BtnDwarf.TabIndex = 10;
@@ -116,7 +116,7 @@
             // 
             // BtnTiefling
             // 
-            this.BtnTiefling.Location = new System.Drawing.Point(3, 188);
+            this.BtnTiefling.Location = new System.Drawing.Point(151, 240);
             this.BtnTiefling.Name = "BtnTiefling";
             this.BtnTiefling.Size = new System.Drawing.Size(142, 46);
             this.BtnTiefling.TabIndex = 12;
@@ -170,7 +170,7 @@
             // 
             // BtnHalfOrc
             // 
-            this.BtnHalfOrc.Location = new System.Drawing.Point(3, 240);
+            this.BtnHalfOrc.Location = new System.Drawing.Point(151, 188);
             this.BtnHalfOrc.Name = "BtnHalfOrc";
             this.BtnHalfOrc.Size = new System.Drawing.Size(142, 46);
             this.BtnHalfOrc.TabIndex = 30;
@@ -180,7 +180,7 @@
             // 
             // BtnGnome
             // 
-            this.BtnGnome.Location = new System.Drawing.Point(151, 240);
+            this.BtnGnome.Location = new System.Drawing.Point(3, 240);
             this.BtnGnome.Name = "BtnGnome";
             this.BtnGnome.Size = new System.Drawing.Size(142, 46);
             this.BtnGnome.TabIndex = 31;

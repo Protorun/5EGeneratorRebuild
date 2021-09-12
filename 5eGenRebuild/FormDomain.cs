@@ -22,6 +22,7 @@ namespace _5eGenRebuild
 
         private void BtnContinue_Click(object sender, EventArgs e)
         {
+            //SetDomainSpells(); METHOD DOESN'T CURRENTLY EXIST, MAYBE BUILD IT DEPENDING HOW SPELL SELECTION GOES
             ThisToon.Domain = LblSelection.Text;
             this.Hide();
             FormNewToon NewToonMenu = new FormNewToon(ThisToon);

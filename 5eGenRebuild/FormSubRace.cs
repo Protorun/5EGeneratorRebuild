@@ -309,6 +309,11 @@ White - Cold - 15' cone (CON save)";
         private void BtnContinue_Click(object sender, EventArgs e)
         {
             ThisToon.SetSubRace(ThisToon, LblSelection.Text);
+            if (ThisToon.SubRace == "Wood Elf")
+            {
+                ThisToon.Speed = 35;
+            }
+
             if (ThisToon.SubRace != " - ")
             {
                 this.Hide();

@@ -16,12 +16,14 @@ namespace _5eGenRebuild
             Class,
             Subclass,
             Domain,
-            Deity;
+            Deity,
+            Background;
 
         public int Age,
             ProficiencyBonus,
             HitPoints,
             HitDie,
+            Speed,
             TotalLevel;
 
         public Dictionary<string, int> Attributes = new Dictionary<string, int>();
@@ -31,10 +33,17 @@ namespace _5eGenRebuild
         public Dictionary<string, string> ClassSubClass = new Dictionary<string, string>();
         public Dictionary<string, int> SavingThrows = new Dictionary<string, int>();
         public Dictionary<string, int> Skills = new Dictionary<string, int>();
+        public List<string> SkillProfs = new List<string>();
         public List<string> SavingThrowProfs = new List<string>();
         public List<Feat> FeatList = new List<Feat>();
+        public List<Feat> RaceFeats = new List<Feat>();
+        public List<string> ToolProfs = new List<string>();
+        public List<string> Languages = new List<string>();
         public Dictionary<int, List<Spell>> Spellbook = new Dictionary<int, List<Spell>>();
         public Dictionary<string, int> Money = new Dictionary<string, int>();
+        public Dictionary<string, int> Inventory = new Dictionary<string, int>();
+        public Dictionary<string, int> BackgroundItems = new Dictionary<string, int>();
+
 
         public Character()
         {
@@ -46,6 +55,24 @@ namespace _5eGenRebuild
             Attributes.Add("Intelligence", 0);
             Attributes.Add("Wisdom", 0);
             Attributes.Add("Charisma", 0);
+            Skills.Add("Athletics", 0);
+            Skills.Add("Acrobatics", 0);
+            Skills.Add("Sleight of Hand", 0);
+            Skills.Add("Stealth", 0);
+            Skills.Add("Arcana", 0);
+            Skills.Add("History", 0);
+            Skills.Add("Investigation", 0);
+            Skills.Add("Nature", 0);
+            Skills.Add("Religion", 0);
+            Skills.Add("Animal Handling", 0);
+            Skills.Add("Insight", 0);
+            Skills.Add("Medicine", 0);
+            Skills.Add("Perception", 0);
+            Skills.Add("Survival", 0);
+            Skills.Add("Deception", 0);
+            Skills.Add("Intimidation", 0);
+            Skills.Add("Performance", 0);
+            Skills.Add("Persuasion", 0);
             AttributeModifiers.Add("Strength", 0);
             AttributeModifiers.Add("Dexterity", 0);
             AttributeModifiers.Add("Constitution", 0);
@@ -62,6 +89,7 @@ namespace _5eGenRebuild
             Money.Add("Silver", 0);
             Money.Add("Electrum", 0);
             Money.Add("Gold", 0);
+            Languages.Add("Common");
         }
 
         public void SetGender(Character ThisToon, string Gender)
@@ -247,10 +275,12 @@ namespace _5eGenRebuild
             int[] FinalArray = { 0, 0, 0, 0, 0, 0 };
 
             int[] Rolls = { 0, 0, 0, 0 };
-            int Attribute = 0;
-            var DiceRoller = new Random();
+            //int Attribute = 0;
+            var RandomSeed = new Random();
+            var DiceRoller = new Random(RandomSeed.Next());
             for (int x = 0; x < 6; x++)
             {
+                int Attribute = 0;
                 for (int i = 0; i < 4; i++)
                 {
                     int Result = DiceRoller.Next(1, 7);
@@ -264,7 +294,7 @@ namespace _5eGenRebuild
                 }
                 //CHANGE THIS CODE, NEED TO GENERATE MORE NUMBERS *6 AS RANDOM IS BASED ON SYSTEM TIME, NEED A BIG LIST TO PULL FROM SO NUMBERS CAN BE REFRESHED
                 FinalArray.SetValue(Attribute, x);
-                Attribute = 0;
+                //Attribute = 0;
             }
             return FinalArray;
         }
@@ -277,6 +307,46 @@ namespace _5eGenRebuild
                 Level =+ item;
             }
             return Level;
+        }
+
+        public void AddToInventory(string Item, int Quantity)
+        {
+            if (Inventory.ContainsKey(Item) == true)
+            {
+                Inventory[Item] = Inventory[Item] + Quantity;
+                Console.WriteLine(Item + " - Item already in inventory, increasing quantity to" + Inventory[Item]);
+            }
+            else if (Inventory.ContainsKey(Item) == false)
+            {
+                Inventory.Add(Item, Quantity);
+                Console.WriteLine(Item + " , " + Quantity + " - added to inventory");
+            }
+        }
+
+        public void AddToBackgroundBackgroundItems(string Item, int Quantity)
+        {
+            if (BackgroundItems.ContainsKey(Item) == true)
+            {
+                BackgroundItems[Item] = Inventory[Item] + Quantity;
+                Console.WriteLine(Item + " - Item already in inventory, increasing quantity to" + BackgroundItems[Item]);
+            }
+            else if (BackgroundItems.ContainsKey(Item) == false)
+            {
+                BackgroundItems.Add(Item, Quantity);
+                Console.WriteLine(Item + " , " + Quantity + " - added to inventory");
+            }
+        }
+
+        public void AddLanguage(string Language)
+        {
+            if (Languages.Contains(Language) == false)
+            {
+                Languages.Add(Language);
+            }
+            else if (Languages.Contains(Language) == true)
+            {
+                Console.WriteLine("Character already knows the " + Language + " language.");
+            }
         }
     }
 }

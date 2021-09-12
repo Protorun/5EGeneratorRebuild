@@ -18,11 +18,45 @@ namespace _5eGenRebuild
         {
             InitializeComponent();
             ThisToon = NewToon;
+            ThisToon.Spellbook.Clear();
         }
 
         private void FormRace_Load(object sender, EventArgs e)
         {
-            ThisToon.Spellbook.Clear();
+
+        }
+
+        private void SetLanguages()
+        {
+            ThisToon.Languages.Clear();
+            ThisToon.Languages.Add("Common");
+            switch (ThisToon.Race)
+            {
+                case "Dragonborn":
+                    ThisToon.AddLanguage("Draconic");
+                    break;
+                case "Dwarf":
+                    ThisToon.AddLanguage("Dwarvish");
+                    break;
+                case "Elf":
+                    ThisToon.AddLanguage("Elvish");
+                    break;
+                case "Gnome":
+                    ThisToon.AddLanguage("Gnomish");
+                    break;
+                case "Half-Elf":
+                    ThisToon.AddLanguage("Elvish");
+                    break;
+                case "Half-Orc":
+                    ThisToon.AddLanguage("Orc");
+                    break;
+                case "Halfling":
+                    ThisToon.AddLanguage("Halfling");
+                    break;
+                case "Tiefling":
+                    ThisToon.AddLanguage("Infernal");
+                    break;
+            }
         }
 
         private void BtnContinue_Click(object sender, EventArgs e)
@@ -92,6 +126,7 @@ Your base walking speed is 30 feet.
 
 Languages
 You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.";
+            ThisToon.Speed = 30;
         }
 
         private void BtnElf_Click(object sender, EventArgs e)
@@ -199,6 +234,7 @@ Whenever you make an Intelligence (History) check related to the origin of stone
 
 Languages
 You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.";
+            ThisToon.Speed = 25;
         }
 
         private void BtnDragonborn_Click(object sender, EventArgs e)

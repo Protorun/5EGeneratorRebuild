@@ -58,6 +58,12 @@
     <Compile Include="FormAttributes.Designer.cs">
       <DependentUpon>FormAttributes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackground.Designer.cs">
+      <DependentUpon>FormBackground.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDeleteToon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="FormDomain.Designer.cs">
       <DependentUpon>FormDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLanguage.Designer.cs">
+      <DependentUpon>FormLanguage.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
@@ -135,6 +147,9 @@
     <Compile Include="Spell.cs" />
     <EmbeddedResource Include="FormAttributes.resx">
       <DependentUpon>FormAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBackground.resx">
+      <DependentUpon>FormBackground.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormClass.resx">
       <DependentUpon>FormClass.cs</DependentUpon>
